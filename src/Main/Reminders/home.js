@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View, ScrollView, Text, TouchableOpacity } from 'react-native';
 import Icon from '@expo/vector-icons/Ionicons';
 import Styles from '../../styles';
-import styles from '../../styles';
+import Heading from './heading';
 
 class RemindersHome extends Component {
 
@@ -19,26 +19,20 @@ class RemindersHome extends Component {
     });
 
     constructor() {
-
-    };
+        super()
+        this.state = {
+            inputValue: '',
+            todos: [],
+            type: 'All'
+        }
+    }
 
     render() {
         return (
-            <View style={styles.remindersContainer}>
+            <View style={Styles.remindersContainer}>
                 <ScrollView keyboardShouldPersistTaps='always'
-                            style={styles.remindersContent}>
-                    <View style={styles.remindersHeader}>
-                        <Text style={styles.remindersHeaderText}>
-                            Reminders
-                        </Text>
-                    </View>
-                    <View style={styles.inputContainer}>
-                        <TextInput
-                            style={styles.input}
-                            placeholder='What needs to be done?'
-                            placeholderTextColor='blue'
-                            selectionColor='blue' />
-                    </View>
+                            style={Styles.remindersContent}>
+                    <Heading />
                 </ScrollView>
             </View>
         );
