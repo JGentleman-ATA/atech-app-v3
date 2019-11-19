@@ -4,8 +4,8 @@ import Styles from '../../styles'
 
 const Heading = () => (
     <View style={Styles.remindersHeader}>
-        <Text style={Styles.remindresHeaderText}>
-            Reminders
+        <Text style={Styles.remindersHeaderText}>
+            Enter a Reminder!
         </Text>
     </View>
 )

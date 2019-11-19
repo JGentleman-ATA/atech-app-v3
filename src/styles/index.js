@@ -22,13 +22,13 @@ export default StyleSheet.create({
         paddingTop: 60
     },
     remindersHeader: {
-        marginTop: 80
+        marginTop: 0
     },
     remindersHeaderText: {
         textAlign: 'center',
-        fontSize: 72,
-        color: 'blue',
-        fontWeight: 'normal'
+        fontSize: 24,
+        color: 'purple',
+        fontWeight: '500'
     },
     remindersInputContainer: {
         marginLeft: 20,
