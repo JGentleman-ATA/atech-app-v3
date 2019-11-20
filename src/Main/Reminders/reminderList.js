@@ -2,15 +2,15 @@ import React from 'react';
 import { View } from 'react-native';
 import Reminder from './reminder';
 
-const ReminderList = ({ reminders, deleteReminder, toggleComplete, type }) => {
+const ReminderList = ({ reminders, deleteReminder, toggleCompleted, type }) => {
     const getVisibleReminders = (reminders, type) => {
         switch(type) {
             case 'All':
                 return reminders
-            case 'Complete':
-                return reminders.filter((t) => t.complete)
+            case 'Completed':
+                return reminders.filter((t) => t.completed)
             case 'Active':
-                return reminders.filter((t) => !t.complete)
+                return reminders.filter((t) => !t.completed)
         }
     }
 
@@ -19,14 +19,14 @@ const ReminderList = ({ reminders, deleteReminder, toggleComplete, type }) => {
         return (
             <Reminder
                 deleteReminder={deleteReminder}
-                toggleComplete={toggleComplete}
+                toggleCompleted={toggleCompleted}
                 key={i}
                 reminder={reminder} />
         )
     })
     return (
         <View>
-            {todos}
+            {reminders}
         </View>
     )
 }

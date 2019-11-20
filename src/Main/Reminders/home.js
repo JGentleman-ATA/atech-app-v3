@@ -6,7 +6,6 @@ import Button from './button';
 import Input from './input';
 import ReminderList from './reminderList';
 import TabBar from './tabBar';
-import TabBar from './tabBar';
 
 let reminderIndex = 0
 
@@ -28,9 +27,10 @@ class RemindersHome extends Component {
         this.state = {
             inputValue: '',
             reminders: [],
-            type: 'All'
+            type: 'Active'
         }
-        this.toggleComplete = this.toggleComplete.bind(this)
+        this.submitReminder = this.submitReminder.bind(this)
+        this.toggleCompleted = this.toggleCompleted.bind(this)
         this.deleteReminder = this.deleteReminder.bind(this)
         this.setType = this.setType.bind(this)
     }
@@ -48,27 +48,27 @@ class RemindersHome extends Component {
         const reminder = {
             title: this.state.inputValue,
             reminderIndex,
-            complete: false
+            completed: false
         }
 
         reminderIndex++
         const reminders = [...this.state.reminders, reminder]
-        this.setState({ todos, inputValue: ''}, () => {
+        this.setState({ reminders, inputValue: ''}, () => {
             console.log('State: ', this.state)
         })
     }
 
-    deleteReminder() {
+    deleteReminder(reminderIndex) {
         let { reminders } = this.state
         reminders = reminders.filter((reminder) => reminder.reminderIndex !== reminderIndex)
         this.setState({ reminders })
     }
 
-    toggleComplete(reminderIndex) {
+    toggleCompleted(reminderIndex) {
         let reminders = this.state.reminders
         reminders.forEach((reminder) => {
             if (reminder.reminderIndex === reminderIndex) {
-                reminder.complete = !reminder.complete
+                reminder.completed = !reminder.completed
             }
         })
         this.setState({ reminders })
@@ -88,7 +88,7 @@ class RemindersHome extends Component {
                     <Input inputValue={inputValue} inputChange={(text) => this.inputChange(text)} />
                     <ReminderList
                         type={type}
-                        toggleComplete={this.toggleComplete}
+                        toggleCompleted={this.toggleCompleted}
                         deleteReminder={this.deleteReminder}
                         reminders={reminders} />
                     <Button submitReminder={this.submitReminder} />

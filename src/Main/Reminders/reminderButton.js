@@ -2,14 +2,14 @@ import React from 'react';
 import { Text, TouchableHighlight } from 'react-native';
 import styles from '../../styles';
 
-const ReminderButton = ({ onPress, complete, name }) => (
+const ReminderButton = ({ onPress, completed, name }) => (
     <TouchableHighlight
         onPress={onPress}
         underlayColor='#efefef'
         style={styles.remindersTodoButton}>
         <Text style={[
             styles.remindersTodoText,
-            complete ? styles.remindersComplete : null,
+            completed ? styles.remindersCompleted : null,
             name === 'Delete' ? styles.remindersDeleteButton : null ]}
         >
             {name}

@@ -96,7 +96,7 @@ export default StyleSheet.create({
     remindersText: {
         color: '#666666'
     },
-    remindersComplete: {
+    remindersCompleted: {
         color: 'green',
         fontWeight: 'bold'
     },

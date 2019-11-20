@@ -9,7 +9,7 @@ const TabBarItem = ({ border, title, selected, setType, type }) => (
         style={[
             styles.remindersItem, selected ? styles.remindersSelected : null,
             border ? styles.remindersBorder : null,
-            type === titles ? styles.remindersSelected : null ]}>
+            type === title ? styles.remindersSelected : null ]}>
         <Text style={[ styles.remindersItemText, type === title ? styles.remindersBold : null ]}>
             {title}
         </Text>
