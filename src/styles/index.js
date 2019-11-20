@@ -43,5 +43,95 @@ export default StyleSheet.create({
         backgroundColor: '#ffffff',
         paddingLeft: 10,
         paddingRight: 10
+    },
+    remindersButtonContainer: {
+        alignItems: 'flex-end'
+    },
+    remindersButton: {
+        height: 50,
+        paddingLeft: 20,
+        paddingRight: 20,
+        backgroundColor: 'white',
+        width: 200,
+        marginRight: 20,
+        marginTop: 15,
+        borderWidth: 1,
+        borderColor: 'rgba(0, 0, 0, 0.1)',
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    remindersSubmit: {
+        color: '#666666',
+        fontWeight: '600'
+    },
+    remindersTodoContainer: {
+        marginLeft: 20,
+        marginRight: 20,
+        backgroundColor: 'white',
+        borderTopWidth: 1,
+        borderRightWidth: 1,
+        borderLeftWidth: 1,
+        borderColor: '#ededed',
+        paddingLeft: 14,
+        paddingTop: 7,
+        paddingBottom: 7,
+        shadowOpacity: 0.2,
+        shadowRadius: 3,
+        shadowColor: 'black',
+        shadowOffset: { width: 2, height: 2 },
+        flexDirection: 'row',
+        alignItems: 'center'
+    },
+    remindersTodoText: {
+        fontSize: 17
+    },
+    remindersTodoButton: {
+        alignSelf: 'flex-end',
+        padding: 7,
+        borderColor: '#ededed',
+        borderWidth: 1,
+        borderRadius: 4,
+        marginRight: 5
+    },
+    remindersText: {
+        color: '#666666'
+    },
+    remindersCompleted: {
+        color: 'green',
+        fontWeight: 'bold'
+    },
+    remindersDeleteButton: {
+        color: 'rgba(175, 47, 47, 1)'
+    },
+    remindersButtons: {
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'flex-end',
+        alignItems: 'center'
+    },
+    remindersTabBarContainer: {
+        height: 70,
+        flexDirection: 'row',
+        borderTopWidth: 1,
+        borderTopColor: '#dddddd'
+    },
+    remindersItem: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    remindersBorder: {
+        borderLeftWidth: 1,
+        borderLeftColor: '#dddddd'
+    },
+    remindersItemText: {
+        color: '#777777',
+        fontSize: 16
+    },
+    remindersSelected: {
+        backgroundColor: '#ffffff'
+    },
+    remindersBold: {
+        fontWeight: 'bold'
     }
 });
