@@ -7,6 +7,7 @@ the best app ever :sunglasses:
 ### Bell Notifications
 ### Schedule
 ### MavPulse
+### Learn
 
 ## Resources
 ### A Book:
