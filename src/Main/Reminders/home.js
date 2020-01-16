@@ -83,7 +83,7 @@ class RemindersHome extends Component {
         return (
             <View style={Styles.remindersContainer}>
                 <ScrollView
-                    keyboardShouldPersistTaps='always'
+                    keyboardShouldPersistTaps='handled'
                     style={Styles.remindersContent}>
                     <Input inputValue={inputValue} inputChange={(text) => this.inputChange(text)} />
                     <ReminderList

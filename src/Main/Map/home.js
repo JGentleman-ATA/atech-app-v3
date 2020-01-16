@@ -3,10 +3,10 @@ import { View, Text, TouchableOpacity } from 'react-native';
 import Icon from '@expo/vector-icons/Ionicons';
 import Styles from '../../styles';
 
-class NewsHome extends Component {
+class MapHome extends Component {
 
     static navigationOptions = ({ navigation }) => ({
-        title: "News",
+        title: "Map",
         headerLeft: (
             <TouchableOpacity
                 style={Styles.headerButton}
@@ -20,11 +20,11 @@ class NewsHome extends Component {
     render() {
         return (
             <View style={Styles.container}>
-                <Text>News</Text>
-                <Icon name="ios-paper" size={48} />
+                <Text>Map</Text>
+                <Icon name="ios-map" size={48} />
             </View>
         );
     }
 }
 
-export default NewsHome;
+export default MapHome;

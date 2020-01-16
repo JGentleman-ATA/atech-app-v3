@@ -2,13 +2,13 @@ import React from 'react';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import { createStackNavigator } from 'react-navigation-stack';
 import MapScreen from './Map';
-import NewsScreen from './News';
+import ScheduleScreen from './Schedule';
 import RemindersScreen from './Reminders';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
 const MainTabs = createBottomTabNavigator(
     {
-        News: NewsScreen,
+        Schedule: ScheduleScreen,
         Map: MapScreen,
         Reminders: RemindersScreen,
     },
@@ -18,7 +18,7 @@ const MainTabs = createBottomTabNavigator(
                 const { routeName } = navigation.state;
                 let IconComponent = Ionicons
                 let iconName;
-                if (routeName === 'News') {
+                if (routeName === 'Schedule') {
                     iconName = `ios-paper`
                 } else if (routeName === 'Map') {
                     iconName = `ios-map`

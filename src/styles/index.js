@@ -1,5 +1,7 @@
 import { StyleSheet } from 'react-native';
 
+const offset = 24;
+
 export default StyleSheet.create({
     container: {
         flex: 1,
@@ -133,5 +135,21 @@ export default StyleSheet.create({
     },
     remindersBold: {
         fontWeight: 'bold'
-    }
+    },
+    chatNameInput: {
+        height: offset * 2,
+        margin: offset,
+        paddingHorizontal: offset,
+        borderColor: '#111111',
+        borderWidth: 1,
+      },
+    chatTitle: {
+        marginTop: offset,
+        marginLeft: offset,
+        fontSize: offset,
+      },
+    chatButtonText: {
+        marginLeft: offset,
+        fontSize: offset,
+      },
 });
