@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
+import Icon from '@expo/vector-icons/Ionicons';
 import Styles from '../../styles';
 
 class ScheduleHome extends Component {
