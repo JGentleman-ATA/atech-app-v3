@@ -1,7 +1,7 @@
 import React from 'react';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import { createStackNavigator } from 'react-navigation-stack';
-import MapScreen from './Map';
+import MapScreen from './Map/index.js';
 import ScheduleScreen from './Schedule';
 import RemindersScreen from './Reminders';
 import Ionicons from '@expo/vector-icons/Ionicons';

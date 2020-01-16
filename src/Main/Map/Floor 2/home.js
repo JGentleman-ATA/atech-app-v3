@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import Icon from '@expo/vector-icons/Ionicons';
-import Styles from '../../styles';
+import Styles from '../../../styles';
+import floor2 from './Map/Floor 2/Floor2Image';
 
-class MapHome extends Component {
+class Floor2Home extends Component {
 
     static navigationOptions = ({ navigation }) => ({
-        title: "Map",
+        title: "Floor 2",
         headerLeft: (
             <TouchableOpacity
                 style={Styles.headerButton}
@@ -20,11 +21,11 @@ class MapHome extends Component {
     render() {
         return (
             <View style={Styles.container}>
-                <Text>Map</Text>
-                <Icon name="ios-map" size={48} />
+                <Text>Floor 2</Text>
+                <floor2 />
             </View>
         );
     }
 }
 
-export default MapHome;
+export default Floor2Home;
