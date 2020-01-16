@@ -6,7 +6,7 @@ import Styles from '../../styles';
 class ScheduleHome extends Component {
 
     static navigationOptions = ({ navigation }) => ({
-        title: "News",
+        title: "Schedule",
         headerLeft: (
             <TouchableOpacity
                 style={Styles.headerButton}
