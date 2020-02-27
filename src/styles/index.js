@@ -15,7 +15,7 @@ export default StyleSheet.create({
         justifyContent: "center",
         alignItems: "center"
     },
-    remindersContainer: {
+    screenContainer: {
         flex: 1,
         backgroundColor: '#f5f5f5'
     },
@@ -136,20 +136,24 @@ export default StyleSheet.create({
     remindersBold: {
         fontWeight: 'bold'
     },
-    chatNameInput: {
-        height: offset * 2,
-        margin: offset,
-        paddingHorizontal: offset,
-        borderColor: '#111111',
-        borderWidth: 1,
-      },
-    chatTitle: {
-        marginTop: offset,
-        marginLeft: offset,
-        fontSize: offset,
-      },
-    chatButtonText: {
-        marginLeft: offset,
-        fontSize: offset,
-      },
+    scheduleTitle: {
+        height: 75,
+        backgroundColor: '#CC66FF',
+        borderWidth: 2,
+        alignItems: "center",
+        justifyContent: "center"
+    },
+    scheduleTitleText: {
+        color: 'white',
+        fontSize: 24
+    },
+    scheduleContent: {
+        height: 350,
+        backgroundColor: '#D0D0D0',
+        alignItems: "center",
+        justifyContent: "center"
+    },
+    scheduleContentText: {
+        fontSize: 16,
+    }
 });

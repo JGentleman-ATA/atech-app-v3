@@ -81,7 +81,7 @@ class RemindersHome extends Component {
     render() {
         const { inputValue, reminders, type } = this.state
         return (
-            <View style={Styles.remindersContainer}>
+            <View style={Styles.screenContainer}>
                 <ScrollView
                     keyboardShouldPersistTaps='handled'
                     style={Styles.remindersContent}>

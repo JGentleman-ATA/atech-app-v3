@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import { createDrawerNavigator } from 'react-navigation-drawer';
-import { createAppContainer } from 'react-navigation';
+import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import Icon from '@expo/vector-icons/Ionicons';
 import Main from './Main';
 import Profile from './Profile';

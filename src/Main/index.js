@@ -1,7 +1,7 @@
 import React from 'react';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import { createStackNavigator } from 'react-navigation-stack';
-import MapScreen from './Map/index.js';
+import MapScreen from './Map';
 import ScheduleScreen from './Schedule';
 import RemindersScreen from './Reminders';
 import Ionicons from '@expo/vector-icons/Ionicons';
@@ -37,4 +37,4 @@ const MainTabs = createBottomTabNavigator(
 );
 
 //Issue: the tab navigator needs to be wrapped inside a stack navigator
-export default createStackNavigator({ MainTabs }, { headerMode: "none" });
+export default createStackNavigator({ MainTabs }, { headerMode: "none" }, {defaultNavigationOptions: {  } });
